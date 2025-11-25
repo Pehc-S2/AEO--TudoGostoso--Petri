@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Receita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .epc {
+            margin: 22.5px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Quase Tudo Gostoso</div>
+            <ul class="nav-list">
+                <li><a href="http://127.0.0.1:5500/public/pages/cadastroReceita.html">Cadastro Receitas</a></li>
+                <li><a href="http://127.0.0.1:5500/public/pages/categorias.html">Cadastro Categorias</a></li>
+                <li><a href="http://127.0.0.1:5500/public/pages/cadastro.html">Cadastro Usuário</a></li>
+                <li><a href="http://127.0.0.1:5500/public/pages/receitas.html">Listagem Receitas</a></li>         
+            </ul>
+        </nav>
+    </header>
+
+    <div class="background"></div>
+
+    <div class="epc"></div>
+    <div class="container">
+        <h2>Cadastro de Refeição</h2>
+
+        <form id="form-refeicao" onsubmit="event.preventDefault(); adicionarRefeicao();">
+
+            <label for="refeicao">Digite a Refeição</label>
+            <input type="text" id="refeicao" placeholder="Ex: Almoço, Lanche, Ceia...">
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Cadastro de Categoria</h2>
+
+        <form id="form-categoria" onsubmit="event.preventDefault(); adicionarCategoria();">
+
+            <label for="categoria">Digite a Categoria</label>
+            <input type="text" id="categoria" placeholder="Ex: Massas, Aves, Bebidas...">
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+
+
+    <script src="../js/categorias.js"></script>
+</body>
+
+</html>
